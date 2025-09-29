@@ -3,17 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sticky Countdown Bar - Funnel Style</title>
+  <title>The Art of Love and Relationships - Funnel Page</title>
   <style>
     body {
       margin: 0;
       font-family: 'Poppins', sans-serif;
-      background: #f4f4f4;
-      color: #333;
-      height: 2000px; /* for scroll demo */
+      background: #000;
+      color: #fff;
     }
 
-    /* Sticky Countdown Bar */
+    /* ========== Countdown Bar ========== */
     .countdown-bar {
       display: flex;
       justify-content: space-between;
@@ -28,20 +27,9 @@
       color: #2d2d2d;
       box-shadow: 0px 3px 15px rgba(0,0,0,0.4);
     }
-
-    .countdown-bar div {
-      flex: 1;
-    }
-
-    .bar-left {
-      text-align: justify;
-      font-size: 30px;
-    }
-
-    .bar-center {
-      text-align: center;
-    }
-
+    .countdown-bar div { flex: 1; }
+    .bar-left { text-align: justify; font-size: 30px; }
+    .bar-center { text-align: center; }
     .bar-center span {
       display: inline-block;
       font-size: clamp(18px, 2.5vw, 24px);
@@ -54,11 +42,7 @@
       box-shadow: 0 0 15px rgba(0,255,183,0.7);
       letter-spacing: 2px;
     }
-
-    .bar-right {
-      text-align: right;
-    }
-
+    .bar-right { text-align: right; }
     .bar-right button {
       background:#ff0057;
       color: #fff;
@@ -70,95 +54,39 @@
       cursor: pointer;
       transition: 0.3s;
     }
-
     .bar-right button:hover {
       background:  #fff;
       color: #ff0057;
       box-shadow: 0 0 15px rgba(255,255,255,0.9);
     }
-  </style>
-</head>
-<body>
 
-  <!-- Sticky Countdown Bar -->
-  <div class="countdown-bar">
-    <div class="bar-left">💖 Get Free Access Now</div>
-    <div class="bar-center"><span id="timer">00:05:00</span></div>
-    <div class="bar-right"> <a href="https://fruzel748.gumroad.com/l/Rina"><button>👉 Click Here to Claim</button> </a></div>
-  </div>
-
-  <script>
-    // Countdown Script (5 minutes)
-    let timer = 300; // 5 minutes in seconds
-    const el = document.getElementById('timer');
-
-    setInterval(() => {
-      let minutes = Math.floor(timer / 60);
-      let seconds = timer % 60;
-      let hours = Math.floor(minutes / 60);
-      minutes = minutes % 60;
-
-      // Format as 00:05:00
-      let display = 
-        (hours < 10 ? "0" + hours : hours) + ":" +
-        (minutes < 10 ? "0" + minutes : minutes) + ":" +
-        (seconds < 10 ? "0" + seconds : seconds);
-
-      el.textContent = display;
-
-      if (timer > 0) timer--;
-    }, 1000);
-  </script>
-
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Art of Love and Relationships - Funnel Page</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Poppins', sans-serif;
-      background: #000;
-      color: #fff;
-    }
-
-    /* Hero Section */
+    /* ========== Hero Section ========== */
     .hero {
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
       text-align: center;
-      padding: 20px 10px;
+      padding: 40px 20px;
       background: linear-gradient(90deg, #f596a9, #f5d1d4);
-      color: #fff;
     }
-
     .hero h1 {
       font-size: 52px;
       font-weight: 900;
       margin-bottom: 20px;
       line-height: 1.2;
       max-width: 900px;
-       color: #5a1a3c; /* softer romantic plum */
-  text-shadow: 1px 1px 5px rgba(255,255,255,0.4);
-  z-index: 1;
+      color: #5a1a3c;
+      text-shadow: 1px 1px 5px rgba(255,255,255,0.4);
     }
-
     .hero h2 {
       font-size: 20px;
       font-weight: 400;
       margin-bottom: 30px;
       max-width: 700px;
-      color: #2c003e; /* deep purple for bold contrast */
-  text-shadow: 1px 1px 10px rgba(255,255,255,0.5); /* soft glow */
-  z-index: 1;
+      color: #2c003e;
+      text-shadow: 1px 1px 10px rgba(255,255,255,0.5);
     }
-
     .hero .cta-btn {
       background: #fff;
       color: #ff0057;
@@ -168,30 +96,26 @@
       border: none;
       border-radius: 50px;
       cursor: pointer;
-      box-shadow: 0 0 20px rgba(0,0,0,0.3);
       transition: 0.3s;
     }
-
     .hero .cta-btn:hover {
       background: #000;
       color: #fff;
       box-shadow: 0 0 25px rgba(255,255,255,0.9);
     }
 
-    /* Video Section */
+    /* ========== Video Section ========== */
     .video-section {
       text-align: center;
-      padding: 0px px;
+      padding: 40px 20px;
       background: linear-gradient(90deg, #f596a9, #f5d1d4);
     }
-
     .video-section h2 {
       font-size: 36px;
       font-weight: 700;
       margin-bottom: 20px;
       color: #ff7a00;
     }
-
     .video-section p {
       font-size: 18px;
       color: #ddd;
@@ -200,7 +124,6 @@
       margin-left: auto;
       margin-right: auto;
     }
-
     .video-box {
       width: 80%;
       max-width: 650px;
@@ -217,52 +140,14 @@
       font-weight: bold;
       box-shadow: 0 0 20px rgba(255,0,87,0.6);
     }
-
     iframe {
       width: 100%;
       height: 100%;
       border-radius: 12px;
       border: none;
     }
-  </style>
-</head>
-<body>
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <h1>Transform Your Love Life with <br>The Art of Love and Relationships</h1>
-    <h2>Discover how to communicate better, rebuild trust, and create the connection you’ve always wanted.</h2>
-   
-  </section>
-
-  <!-- Video Section -->
-  <section class="video-section">
-    
-    <!-- Placeholder Box -->
-    
-    <!-- Example YouTube Embed -->
-    
-    <div class="video-box">
-      <iframe src="landing page.mp4" allowfullscreen></iframe>
-    </div>
-    
-  </section>
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Book Mockup + Opt-in Form</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Poppins', sans-serif;
-      background: #fdf7f5;
-      color: #5a4a4a;
-    }
-
-    /* Section Layout */
+    /* ========== Book Opt-in Section ========== */
     .book-optin {
       display: flex;
       justify-content: center;
@@ -272,8 +157,6 @@
       gap: 60px;
       background: linear-gradient(90deg, #f596a9, #f5d1d4);
     }
-
-    /* Left: Book */
     .book-left img {
       width: 420px;
       max-width: 100%;
@@ -281,36 +164,25 @@
       box-shadow: 0 12px 30px rgba(0,0,0,0.15);
       transition: transform 0.3s ease;
     }
-
-    .book-left img:hover {
-      transform: scale(1.05);
-    }
-
-    /* Right: Form */
-    .book-right {
-      max-width: 450px;
-    }
-
+    .book-left img:hover { transform: scale(1.05); }
+    .book-right { max-width: 450px; }
     .book-right h2 {
       font-size: 26px;
       font-weight: 800;
       margin-bottom: 15px;
       color: #3d1a26;
     }
-
     .book-right p {
       font-size: 18px;
       line-height: 1.6;
       color: #5a4a4a;
       margin-bottom: 30px;
     }
-
     .optin-form {
       display: flex;
       flex-direction: column;
       gap: 15px;
     }
-
     .optin-form input {
       padding: 16px;
       font-size: 16px;
@@ -318,14 +190,7 @@
       border-radius: 8px;
       background: #fff;
       box-shadow: 0 3px 8px rgba(0,0,0,0.08);
-      outline: none;
-      transition: box-shadow 0.3s ease;
     }
-
-    .optin-form input:focus {
-      box-shadow: 0 4px 12px rgba(233, 156, 174, 0.4);
-    }
-
     .optin-form button {
       padding: 16px;
       font-size: 18px;
@@ -335,16 +200,13 @@
       background: #e89cae;
       color: #fff;
       cursor: pointer;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
       transition: 0.3s;
     }
-
     .optin-form button:hover {
       background: #c96f86;
       transform: translateY(-2px);
       box-shadow: 0 6px 16px rgba(0,0,0,0.2);
     }
-
     .book-right small {
       display: block;
       margin-top: 12px;
@@ -352,83 +214,18 @@
       color: #5a4a4a;
     }
 
-    /* Responsive */
-    @media (max-width: 900px) {
-      .book-optin {
-        flex-direction: column;
-        text-align: center;
-        gap: 450px;
-      }
-      .book-right {
-        max-width: 100%;
-      }
-    }
-  </style>
-</head>
-<body>
-
-  <!-- Book Mockup + Opt-in Form Section -->
-  <section class="book-optin">
-    
-    <!-- Left: Book Mockup -->
-    <div class="book-left">
-      <img src="Book Mockup.png" alt="Book Mockup">
-    </div>
-
-    <!-- Right: Opt-in Form -->
-    <div class="book-right">
-      <h2> Get Your Free Copy Today</h2>
-      
-      
-      <form class="optin-form" action="#" method="POST">
-        <input type="text" name="name" placeholder="Your Name" required>
-        <input type="email" name="email" placeholder="Your Email" required>
-        <a href="https://fruzelshaik.github.io/book-preview/" target="_blank">
-  <button type="button">✨ Download Free Book</button>
-</a>
-
-      </form>
-      
-      <small>💡 100% privacy guaranteed. We never spam.</small>
-    </div>
-
-  </section>
-
-</body>
-</html>
-
-
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Benefits Section</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Poppins', sans-serif;
-      background: #000;
-      color: #fff;
-    }
-
-    /* Benefits Section */
+    /* ========== Benefits Section ========== */
     .benefits-section {
       text-align: center;
       padding: 30px 20px;
       background: linear-gradient(90deg, #f596a9, #f5d1d4);
-      color: #fff;
     }
-
     .benefits-section h2 {
       font-size: 40px;
       font-weight: 800;
       margin-bottom: 40px;
       color: #64321e;
     }
-
     .benefits-list {
       max-width: 800px;
       margin: auto;
@@ -436,29 +233,154 @@
       list-style: none;
       padding: 0;
     }
-
     .benefits-list li {
       font-size: 20px;
-      font-weight: 400;
-      margin-bottom: 30px;
+      margin-bottom: 20px;
+      color: #2c003e;
+      text-shadow: 1px 1px 10px rgba(255,255,255,0.5);
+    }
+
+    /* ========== Author Section ========== */
+    .author-section {
+      text-align: center;
+      padding: 30px 20px;
+      background: linear-gradient(90deg, #f596a9, #f5d1d4);
+    }
+    .author-section img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      border: 4px solid #ff0057;
+      margin-bottom: 20px;
+      box-shadow: 0 0 20px rgba(255,0,87,0.7);
+    }
+    .author-section h2 {
+      font-size: 32px;
+      font-weight: 800;
+      margin-bottom: 10px;
+      color: #64321e;
+    }
+    .author-section h3 {
+      font-size: 20px;
+      font-weight: 500;
+      margin-bottom: 20px;
+      color: #976767;
+    }
+    .author-section p {
       max-width: 700px;
-      color: #2c003e; /* deep purple for bold contrast */
-  text-shadow: 1px 1px 10px rgba(255,255,255,0.5); /* soft glow */
-  z-index: 1;
+      margin: auto;
+      font-size: 18px;
+      line-height: 1.6;
     }
 
-    .benefits-list li::before {
-      position: absolute;
-      left: 0;
-      font-size: 24px;
+    /* ========== Sticky Footer ========== */
+    .sticky-footer {
+      position: sticky;
+      bottom: 0;
+      width: 100%;
+      background: linear-gradient(90deg, #f596a9, #f5d1d4);
+      border-top: 2px solid #ff0057;
+      text-align: center;
+      padding: 20px;
+      box-shadow: 0px -3px 20px rgba(255,0,87,0.6);
+    }
+    .sticky-footer h3 {
+      font-size: 26px;
+      margin-bottom: 15px;
+      color: #64321e;
+    }
+    .sticky-footer button {
+      background: linear-gradient(90deg, #f596a9, #f5d1d4);
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      font-size: 20px;
+      font-weight: bold;
+      border-radius: 50px;
+      cursor: pointer;
+    }
+    .sticky-footer button:hover {
+      background: #fff;
+      color: #ff0057;
     }
 
-    
+    /* ========== Mobile Responsive ========== */
+    @media (max-width: 768px) {
+      .countdown-bar {
+        flex-direction: column;
+        padding: 10px 20px;
+        text-align: center;
+        gap: 10px;
+      }
+      .bar-left { font-size: 20px; text-align: center; }
+      .bar-right button { font-size: 16px; padding: 10px 16px; }
+
+      .hero h1 { font-size: 32px; }
+      .hero h2 { font-size: 16px; }
+      .hero .cta-btn { font-size: 18px; padding: 12px 25px; }
+
+      .video-section h2 { font-size: 24px; }
+      .video-box { width: 95%; height: 220px; }
+
+      .book-optin { flex-direction: column; gap: 20px; }
+      .book-left img { width: 80%; max-width: 300px; }
+      .book-right h2 { font-size: 22px; }
+      .book-right p { font-size: 16px; }
+      .optin-form input, .optin-form button { font-size: 16px; padding: 14px; }
+
+      .benefits-section h2 { font-size: 28px; }
+      .benefits-list li { font-size: 16px; }
+
+      .author-section img { width: 120px; height: 120px; }
+      .author-section h2 { font-size: 24px; }
+      .author-section p { font-size: 16px; }
+
+      .sticky-footer h3 { font-size: 18px; }
+      .sticky-footer button { font-size: 16px; padding: 8px 14px; }
+    }
   </style>
 </head>
 <body>
 
-  <!-- Benefits Section -->
+  <!-- Countdown -->
+  <div class="countdown-bar">
+    <div class="bar-left">💖 Get Free Access Now</div>
+    <div class="bar-center"><span id="timer">00:05:00</span></div>
+    <div class="bar-right"><a href="https://fruzel748.gumroad.com/l/Rina"><button>👉 Click Here to Claim</button></a></div>
+  </div>
+
+  <!-- Hero -->
+  <section class="hero">
+    <h1>Transform Your Love Life with <br>The Art of Love and Relationships</h1>
+    <h2>Discover how to communicate better, rebuild trust, and create the connection you’ve always wanted.</h2>
+  </section>
+
+  <!-- Video -->
+  <section class="video-section">
+    <div class="video-box">
+      <iframe src="C:\Users\Fruzel Shaik\Desktop\Money\Product 1\book code\landing page.mp4" allowfullscreen></iframe>
+    </div>
+  </section>
+
+  <!-- Book Optin -->
+  <section class="book-optin">
+    <div class="book-left">
+      <img src="C:\Users\Fruzel Shaik\Desktop\Money\Product 1\book code\Book Mockup.png" alt="Book Mockup">
+    </div>
+    <div class="book-right">
+      <h2> Get Your Free Copy Today</h2>
+      <form class="optin-form" action="#" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <a href="https://fruzelshaik.github.io/book-preview/" target="_blank">
+          <button type="button">✨ Download Free Book</button>
+        </a>
+      </form>
+      <small>💡 100% privacy guaranteed. We never spam.</small>
+    </div>
+  </section>
+
+  <!-- Benefits -->
   <section class="benefits-section">
     <h2>Why This Book Will Change Your Life</h2>
     <ul class="benefits-list">
@@ -472,145 +394,37 @@
     </ul>
   </section>
 
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Author Bio - Rina Glush</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Poppins', sans-serif;
-      background: #000;
-      color: #fff;
-    }
-
-    /* Author Section */
-    .author-section {
-      text-align: center;
-      padding: 30px 20px;
-      background: linear-gradient(90deg, #f596a9, #f5d1d4);
-    }
-
-    .author-section img {
-      width: 150px;
-      height: 150px;
-      border-radius: 50%;
-      border: 4px solid #ff0057;
-      margin-bottom: 20px;
-      box-shadow: 0 0 20px rgba(255,0,87,0.7);
-    }
-
-    .author-section h2 {
-      font-size: 32px;
-      font-weight: 800;
-      margin-bottom: 10px;
-      color: #64321e;
-    }
-
-    .author-section h3 {
-      font-size: 20px;
-      font-weight: 500;
-      margin-bottom: 20px;
-      color: #976767;
-    }
-
-    .author-section p {
-      max-width: 700px;
-      margin: auto;
-      font-size: 18px;
-      line-height: 1.6;
-      color: hsl(0, 0%, 100%);
-    }
-  </style>
-</head>
-<body>
-
-  <!-- Author Bio Section -->
+  <!-- Author -->
   <section class="author-section">
-    <img src="author image.jpg" alt="Rina Glush">
+    <img src="C:\Users\Fruzel Shaik\Desktop\Money\Product 1\book code\author image.jpg" alt="Rina Glush">
     <h2>Rina Glush</h2>
     <h3>Author of <em>The Art of Love and Relationships</em></h3>
-    <p>
-      Rina Glush is a passionate voice in modern relationships, dedicated to helping people
-      build stronger, healthier, and lasting connections. Her work blends heartfelt wisdom
-      with practical strategies that anyone can apply. Through her unique perspective,
-      she inspires readers to communicate with clarity, heal from heartbreak, and embrace
-      the love they truly deserve.
-    </p>
+    <p>Rina Glush is a passionate voice in modern relationships, dedicated to helping people build stronger, healthier, and lasting connections. Her work blends heartfelt wisdom with practical strategies that anyone can apply. Through her unique perspective, she inspires readers to communicate with clarity, heal from heartbreak, and embrace the love they truly deserve.</p>
   </section>
 
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sticky Footer CTA - Upgraded</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Poppins', sans-serif;
-      background: #000;
-      color: #fff;
-      height: 2000px; /* for demo scroll */
-    }
-
-    /* Sticky Footer CTA */
-    .sticky-footer {
-      position: sticky;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      background: linear-gradient(90deg, #f596a9, #f5d1d4);
-      border-top: 2px solid #ff0057;
-      text-align: center;
-      padding: 20px 20px;
-      box-shadow: 0px -3px 20px rgba(255,0,87,0.6);
-      z-index: 1000;
-    }
-
-    .sticky-footer h3 {
-      font-size: 26px;
-      font-weight: 700;
-      margin-bottom: 15px;
-      color: #64321e;
-      text-shadow: 0 0 10px rgba(0,0,0,0.3);
-    }
-
-    .sticky-footer button {
-      background: linear-gradient(90deg, #f596a9, #f5d1d4);
-      color: #fff;
-      border: none;
-      padding: 10px 20px;
-      font-size: 20px;
-      font-weight: bold;
-      border-radius: 50px;
-      cursor: pointer;
-      transition: 0.3s;
-      box-shadow: 0 0 18px rgba(255,0,87,0.7);
-    }
-
-    .sticky-footer button:hover {
-      background: #fff;
-      color: #ff0057;
-      box-shadow: 0 0 20px rgba(255,255,255,0.9);
-    }
-  </style>
-</head>
-<body>
-
-  <!-- Sticky Footer CTA -->
+  <!-- Sticky Footer -->
   <div class="sticky-footer">
     <h3>💖 Ready to Transform Your Love Life?</h3>
-     <a href="https://fruzel748.gumroad.com/l/Rina">
-    <button>👉 Get Instant Access Now</button>  </a>
+    <a href="https://fruzel748.gumroad.com/l/Rina"><button>👉 Get Instant Access Now</button></a>
   </div>
 
-</body>
+  <!-- Countdown Script -->
+  <script>
+    let timer = 300; // 5 minutes in seconds
+    const el = document.getElementById('timer');
+    setInterval(() => {
+      let minutes = Math.floor(timer / 60);
+      let seconds = timer % 60;
+      let hours = Math.floor(minutes / 60);
+      minutes = minutes % 60;
+      let display =
+        (hours < 10 ? "0" + hours : hours) + ":" +
+        (minutes < 10 ? "0" + minutes : minutes) + ":" +
+        (seconds < 10 ? "0" + seconds : seconds);
+      el.textContent = display;
+      if (timer > 0) timer--;
+    }, 1000);
+  </script>
 
+</body>
 </html>
